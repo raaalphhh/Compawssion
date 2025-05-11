@@ -23,7 +23,7 @@ Compawssion is a web application that connects pet lovers with pets in need of a
 
 ## Technology Stack
 Compawssion is built using the MERN stack (MongoDB, Express.js, React, Node.js) 
-- thanks google and chatgpt and github
+- maraming thanks google and chatgpt and github mwehehe
 
 ## Installation
 Follow these steps to set up the project locally:
