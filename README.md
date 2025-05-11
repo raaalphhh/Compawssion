@@ -36,6 +36,7 @@ Follow these steps to set up the project locally:
 
 ### Additional Notes
 - Ensure to have Node.js and npm installed on your machine.
+- pag error due to dependencies and sheesh, npm audit fix lang. same Client directory pa rin.
 - and Live Server extension sa Visual Studio Code para mas madali mag edit.
 - localhost:3000/admin yung admin side.
 - email: admin; pass: 123
