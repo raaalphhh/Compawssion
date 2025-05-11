@@ -12,7 +12,7 @@ const app = express();
 // Enable CORS for frontend (change origin to your actual frontend URL)
 app.use(cors({
   origin: 'https://compawssion-1.onrender.com', // allow your frontend to access this server
-  credentials: true
+  credentials: false
 }));
 
 // Serve images statically from /images
