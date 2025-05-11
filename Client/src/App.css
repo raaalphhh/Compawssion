@@ -1351,6 +1351,26 @@ body {
     min-width: 80vw;
 }
 
+
+.admin-login-container {
+  margin-left: auto;
+}
+
+.admin-login-btn {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.admin-login-btn:hover {
+  background-color: #45a049;
+}
+
+
 .pet-view-card {
     display: flex;
     flex-direction: column;

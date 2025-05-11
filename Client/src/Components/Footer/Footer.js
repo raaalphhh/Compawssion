@@ -59,8 +59,13 @@ const Footer = (props) => {
         </p>
         <p>&copy; 2025 Emerging Technologies Project</p>
       </div>
+      <div className="admin-login-container">
+        <Link to="/admin">
+          <button className="admin-login-btn">Admin Login</button>
+        </Link>
+      </div>
     </footer>
-  );
+  );D:\School Things\etech\newpetsheesh\Compawssion\Client\src\Components\Footer\Footer.js
 };
 
 export default Footer;
