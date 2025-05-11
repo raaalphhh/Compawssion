@@ -1,0 +1,12 @@
+.contact-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

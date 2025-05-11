@@ -12,9 +12,9 @@ import "./App.css";
 
 const Layout = ({ children }) => (
   <>
-    <Navbar title="PawFinds" />
+    <Navbar title="Compawssion" />
     {children}
-    <Footer title="PawFinds" />
+    <Footer title="Compawssion" />
   </>
 );
 
@@ -26,7 +26,7 @@ const App = () => {
           path="/" 
           element={
             <Layout>
-              <Home description="Ensure you are fully prepared to provide proper care and attention to your pet before welcoming them into your home." />
+              <Home description="Adopting a pet? Awesome! Just remember—love is forever, but so are vet bills and early-morning wake-up calls. Make sure you're ready for the full, pawsome adventure before bringing home your new furry overlord!" />
             </Layout>
           } 
         />
