@@ -1,5 +1,5 @@
 import React from "react";
-import girlHoldingADog from "./images/girlHoldingADog.png";
+import landingimage2 from "./images/landingimage2.png";
 import homepageDog from "./images/homepageDog.png";
 import footPrint from "./images/footPrint.png";
 import { Link } from "react-router-dom";
@@ -11,25 +11,25 @@ const HomeLandingContainer = (props) => {
   return (
     <div className="home-container">
       <div className="homeContainer-left">
-        <div>
-          <p className="home-title">
-            <div className="home-titlePlusPng">
-            <p>Your Pets </p><img src={homepageDog} alt="Dog sitting"/>
-            </div>
-            Are Our
-            <br />
-            Priority
-          </p>
-          <p className="home-second-para">
-            {props.description}
-          </p>
-        </div>
+        <img src={landingimage2} alt='Girl holding a Dog'/>
         <div className="adopt-btn">
           <Link to='./pets'><button className="Home-button" onClick={scrollToTop}><p>Adopt a Pet</p><img src={footPrint} alt="footprint" /></button></Link>
         </div>
       </div>
       <div className="homeContainer-right">
-        <img src={girlHoldingADog} alt='Girl holding a Dog'/>
+        <div>
+          <p className="home-title">
+            <div className="home-titlePlusPng">
+            <p>Life is better </p>
+            </div>
+             with fur, paws,
+            <br />
+            and a little chaos!
+          </p>
+          <p className="home-second-para">
+            {props.description}
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "./images/logo.png";
+import Compawssion2 from "./images/Compawssion2.png";
 
 const Navbar = (props) => {
   return (
     <div className="navbar-container">
       <div>
         <Link className="logo-container" to="/">
-          <img className="navbar-logo" src={logo} alt="Compawssion Logo" />
+          <img className="navbar-logo" src={Compawssion2} alt="Compawssion Logo" />
           <p>{props.title}</p>
         </Link>
       </div>

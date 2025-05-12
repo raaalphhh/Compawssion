@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "./images/logo.png";
+import Compawssion2 from "./images/Compawssion2.png";
 
 const Footer = (props) => {
   return (
     <footer className="footer">
       <div>
         <Link className="logo-container" to="/">
-          <img className="navbar-logo" src={logo} alt="Compawssion Logo" />
+          <img className="navbar-logo" src={Compawssion2} alt="Compawssion Logo" />
           <p>{props.title}</p>
         </Link>
       </div>
@@ -57,7 +57,7 @@ const Footer = (props) => {
             <i className="fa fa-facebook"></i> Irysse
           </a>
         </p>
-        <p>&copy; 2025 Emerging Technologies Project</p>
+        <p>{"\u00A9"} 2025 Emerging Technologies Project</p>
       </div>
       <div className="admin-login-container">
         <Link to="/admin">
@@ -65,7 +65,7 @@ const Footer = (props) => {
         </Link>
       </div>
     </footer>
-  );D:\School Things\etech\newpetsheesh\Compawssion\Client\src\Components\Footer\Footer.js
+  );
 };
 
 export default Footer;

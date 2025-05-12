@@ -7,10 +7,23 @@ const Home = (props) => {
   return (
     <>
       <HomeLandingContainer description={props.description} />
-      <CardBelowHome />
+      
       <PlanningToAdoptAPet />
     </>
   );
 };
 
 export default Home;
+
+
+/*
+const Home = (props) => {
+  return (
+    <>
+      <HomeLandingContainer description={props.description} />
+      
+      <PlanningToAdoptAPet />
+    </>
+  );
+};
+*/

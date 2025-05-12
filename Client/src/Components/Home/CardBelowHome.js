@@ -22,3 +22,4 @@ const CardBelowHome = () => {
 }
 
 export default CardBelowHome;
+
