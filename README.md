@@ -40,3 +40,5 @@ Follow these steps to set up the project locally:
 - and Live Server extension sa Visual Studio Code para mas madali mag edit.
 - localhost:3000/admin yung admin side.
 - email: admin; pass: 123
+
+# Sa desktop or laptop screen lang to compatible yung layout, hindi responsive and sheesh.
