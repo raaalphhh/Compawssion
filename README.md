@@ -1,4 +1,4 @@
-# Compawssion: A Pet Adoption System | MERN Stack Portfolio with Admin Panel
+# Compawssion: A Pet Adoption System 
 "Compawssion" is a website where you can either give a pet up for adoption or adopt one. If you have a pet you can't care for anymore, you fill out a form. The admin then decides if they can put your pet on Compawssion. If they approve, they'll ask you to bring the pet to an adoption center.
 
 If you want to adopt a pet, you fill out a form with your details. The admin gets a lot of requests and picks the best one. If they choose you, they'll delete the other requests and take the pet off Compawssion. They'll keep a record of the pet and your contact info.
@@ -28,7 +28,7 @@ Compawssion is built using the MERN stack (MongoDB, Express.js, React, Node.js)
 ## Installation
 Follow these steps to set up the project locally:
 
-1. Extract the zipped file
+1. close repository using 'git clone https://github.com/raaalphhh/Compawssion.git' - take time to know pano yung branch or fork, kung ano man tama. para makakapag code ka ng sarili mong version. tapos pag working or sheesh, mamemerge. please lang, di ko rin alam yung github, gumugol din ako ng oras, baka naman di ba. nahirapan ako magset-up, nasiraan pa ng laptop. 
 2. Install dependencies both sa Client directory and server directory: `npm install` (pag walang "node modules" yung zipped file na sinend ko, malamang need mo pa mag npm install")
 3. Connected na to sa database ko, pero kung gusto mo rin makita sa end mo, create ka lang ng `.env` file in server with `mongooseURL` variable set to your MongoDB connection URL in the format `mongooseURL=mongodb://username:password@host:port/database_name`. Nikocopy lang to after mo magset-up, papalitan mo lang yung dababase name at password.
 4. Run the server: `npx nodemon server`. Dapat may lumabas na "connected" sheesh. 
