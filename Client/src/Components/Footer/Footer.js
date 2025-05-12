@@ -65,7 +65,7 @@ const Footer = (props) => {
         </Link>
       </div>
     </footer>
-  );D:\School Things\etech\newpetsheesh\Compawssion\Client\src\Components\Footer\Footer.js
+  );
 };
 
 export default Footer;
