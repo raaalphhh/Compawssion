@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 }
-
+/*
 body::before {
   content: "";
   position: fixed;
@@ -15,7 +15,7 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("D:\School Things\etech\newpetsheesh\Compawssion\Client\public\image.png");
+  background-image: url("Compawssion\Client\src\assets\image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@ body::before {
   opacity: 0.5;
   z-index: -1;
 }
-
+*/
 code {
   font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
 }
