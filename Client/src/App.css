@@ -324,25 +324,6 @@
     color: var(--orange);
 }
 
-.req-filter-selection {
-    font-weight: bold;
-    padding: 6px 5px;
-    border-radius: 15px;
-    color: var(--white);
-    background-color: var(--orange);
-    border: none;
-}
-
-.req-filter-selection:hover {
-    cursor: pointer;
-    background-color: var(--hoverorange);
-    border: none;
-}
-
-.req-filter-selection:focus {
-    outline: none;
-}
-
 .logout-btn {
     cursor: pointer;
 }
@@ -1257,50 +1238,6 @@ body {
 }
 
 
-.admin-screen-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
-}
-
-.admin-screen-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 20vw;
-    min-width: 20vw;
-    padding: 25px;
-}
-
-.admin-screen-left h3 {
-    margin-bottom: 20px;
-}
-
-.admin-screen-left p {
-    font-weight: bold;
-    font-size: large;
-    color: var(--orange);
-    font-family: "Varela Round", sans-serif;
-    cursor: pointer;
-    margin: 10px 0;
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--orange);
-}
-
-.admin-screen-left p:hover {
-    opacity: 0.8;
-}
-
-.admin-screen-right {
-    border-left: 3px solid var(--orange);
-    padding: 0 4vw;
-    max-width: 80vw;
-    min-width: 80vw;
-}
-
-
 .admin-login-container {
   margin-left: auto;
 }
@@ -1494,24 +1431,6 @@ body {
     color: var(--orange);
 }
 
-.req-filter-selection {
-    font-weight: bold;
-    padding: 6px 5px;
-    border-radius: 15px;
-    color: var(--white);
-    background-color: var(--orange);
-    border: none;
-}
-
-.req-filter-selection:hover {
-    cursor: pointer;
-    background-color: var(--hoverorange);
-    border: none;
-}
-
-.req-filter-selection:focus {
-    outline: none;
-}
 
 .logout-btn {
     cursor: pointer;

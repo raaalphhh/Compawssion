@@ -9,7 +9,7 @@ import Pets from "./Components/Pets/Pets";
 import AdoptForm from "./Components/AdoptForm/AdoptForm";
 import AdminLogin from "./Components/AdminPanel/AdminLogin";
 import "./App.css";
-
+import "./Components/AdminPanel/Admin.css"
 const Layout = ({ children }) => (
   <>
     <Navbar />
