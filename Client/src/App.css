@@ -532,13 +532,13 @@ body {
 
 .left-pic {
     position: relative;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     z-index: 2;
 }
 
 .left-pic>img {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
