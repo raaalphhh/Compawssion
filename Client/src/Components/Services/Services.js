@@ -1,5 +1,4 @@
 import React from 'react'
-import AdoptSection from './AdoptSection'
 import PostPetSection from './PostPetSection'
 
 const Services = () => {
