@@ -34,6 +34,9 @@ const Pets = () => {
 
   return (
     <>
+      <h1 className="big-title">meet your furry friends</h1>
+      <div className="heading-spacer"></div>
+      
       <div className="filter-selection">
         <select
           value={filter}

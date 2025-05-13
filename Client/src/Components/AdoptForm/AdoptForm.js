@@ -38,8 +38,7 @@ function AdoptForm(props) {
     }
 
     try {
-
-      setIsSubmitting(true)
+      setIsSubmitting(true);
 
       const response = await fetch('https://compawssion.onrender.com/form/save', {
         method: 'POST',
@@ -54,22 +53,20 @@ function AdoptForm(props) {
           familyComposition,
           petId: props.pet._id
         })
-      })
+      });
 
       if (!response.ok) {
-        setErrPopup(true)
+        setErrPopup(true);
         return;
       } else {
-        setSuccPopup(true)
+        setSuccPopup(true);
       }
-    }
-    catch (err) {
-      setErrPopup(true)
+    } catch (err) {
+      setErrPopup(true);
       console.error(err);
       return;
     } finally {
-      setIsSubmitting(false)
-
+      setIsSubmitting(false);
     }
 
     setEmailError(false);
@@ -82,36 +79,29 @@ function AdoptForm(props) {
   };
 
   return (
+    <div className = "popup-wrapper">
+      <div className = "popup-details">
+              <p>{props.pet.type}</p>
+      </div>
     <div className="custom-adopt-form-container">
-      <h2 className="custom-form-heading">Pet Adoption Application</h2>
+      
+      <div className="popup-top-banner">
+        <img
+          src={`https://compawssion.onrender.com/images/${props.pet.filename}`}
+          alt={props.pet.name}
+        />
+        <h2 className="custom-form-heading-overlay">{props.pet.name}</h2>
+      </div>
+
       <div className="form-pet-container">
-        <div className="pet-details">
-          <div className="pet-pic">
-            <img src={`https://compawssion.onrender.com/images/${props.pet.filename}`} alt={props.pet.name} />
-          </div>
-          <div className="pet-info">
-            <h2>{props.pet.name}</h2>
-            <p>
-              <b>Type:</b> {props.pet.type}
-            </p>
-            <p>
-              <b>Age:</b> {props.pet.age}
-            </p>
-            <p>
-              <b>Location:</b> {props.pet.location}
-            </p>
-          </div>
-        </div>
+
         <div className="form-div">
+          <h3 className="custom-form-subheading">owner's profile</h3>
           <form onSubmit={handleSubmit} className="custom-form">
             <div className="custom-input-box">
               <div className="email-not-valid">
                 <label className="custom-label">Email:</label>
-                {emailError && (
-                  <p>
-                    Please provide valid email address.
-                  </p>
-                )}
+                {emailError && <p>Please provide valid email address.</p>}
               </div>
               <input
                 type="text"
@@ -120,6 +110,7 @@ function AdoptForm(props) {
                 className="custom-input"
               />
             </div>
+
             <div className="custom-input-box">
               <label className="custom-label">Phone No.</label>
               <input
@@ -129,6 +120,7 @@ function AdoptForm(props) {
                 className="custom-input"
               />
             </div>
+
             <div className="custom-input-box">
               <label className="custom-label">Pet Living Situation:</label>
               <input
@@ -138,6 +130,7 @@ function AdoptForm(props) {
                 className="custom-input"
               />
             </div>
+
             <div className="custom-input-box">
               <label className="custom-label">Previous Pet Experience:</label>
               <input
@@ -147,6 +140,7 @@ function AdoptForm(props) {
                 className="custom-input"
               />
             </div>
+
             <div className="custom-input-box">
               <label className="custom-label">Any Other Pets:</label>
               <input
@@ -156,24 +150,26 @@ function AdoptForm(props) {
                 className="custom-input"
               />
             </div>
+
             {formError && (
               <p className="error-message">Please fill out all fields.</p>
             )}
+
             <button disabled={isSubmitting} type="submit" className="custom-cta-button custom-m-b">
               {isSubmitting ? 'Submitting' : 'Submit'}
             </button>
+
             {ErrPopup && (
               <div className="popup">
                 <div className="popup-content">
-                  <h4>
-                    Oops!... Connection Error.
-                  </h4>
+                  <h4>Oops!... Connection Error.</h4>
                 </div>
-                <button onClick={(e) => (setErrPopup(!ErrPopup))} className="close-btn">
+                <button onClick={() => setErrPopup(!ErrPopup)} className="close-btn">
                   Close <i className="fa fa-times"></i>
                 </button>
               </div>
             )}
+
             {SuccPopup && (
               <div className="popup">
                 <div className="popup-content">
@@ -181,8 +177,8 @@ function AdoptForm(props) {
                     Adoption Form of {props.pet.name} is Submitted; we'll get in touch with you soon for further process.
                   </h4>
                 </div>
-                <button onClick={(e) => {
-                  setSuccPopup(!SuccPopup);
+                <button onClick={() => {
+                  setSuccPopup(false);
                   props.closeForm();
                 }} className="close-btn">
                   Close <i className="fa fa-times"></i>
@@ -192,6 +188,7 @@ function AdoptForm(props) {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 }
