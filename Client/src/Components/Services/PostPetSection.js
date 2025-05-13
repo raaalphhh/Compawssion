@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { injectCatDogAnimation } from './catDogAnimation.js';
 
 const PostPetSection = () => {
   const [name, setName] = useState("");
