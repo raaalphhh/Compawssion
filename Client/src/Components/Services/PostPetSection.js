@@ -113,10 +113,11 @@ const PostPetSection = () => {
 
   return (
     <section className="post-pet-section">
-      <h2>Post a Pet for Adoption</h2>
+      <h4>REHOME A PET</h4>
+      <h2>Rehome with Compawssion</h2>
       <img src={postPet} alt="Pet Looking for a Home" />
 
-      <form onSubmit={handleSubmit} encType="multipart/form-data">
+      <form onSubmit={handleSubmit} encType="multipart/form-data" className="form-card">
         <div className="input-box">
           <label>Name:</label>
           <input
