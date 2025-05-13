@@ -59,11 +59,6 @@ const Footer = (props) => {
         </p>
         <p>{"\u00A9"} 2025 Emerging Technologies Project</p>
       </div>
-      <div className="admin-login-container">
-        <Link to="/admin">
-          <button className="admin-login-btn">Admin Login</button>
-        </Link>
-      </div>
     </footer>
   );
 };

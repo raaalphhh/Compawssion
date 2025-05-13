@@ -6,8 +6,8 @@ import PlanningToAdoptAPet from "./PlanningToAdoptAPet";
 const Home = (props) => {
   return (
     <>
+      <CardBelowHome/>
       <HomeLandingContainer description={props.description} />
-      
       <PlanningToAdoptAPet />
     </>
   );

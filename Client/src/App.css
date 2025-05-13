@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
 
 * {
@@ -26,6 +28,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 35px;
+    background-color: var(--orange);
+    position: fixed;
+    z-index: 1;
 }
 
 .navbar-logo {
@@ -62,7 +67,6 @@
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     font-size: 15px;
-    border-radius: 20px;
     color: var(--black);
 }
 
@@ -94,6 +98,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 200px;
+    font-family: 'Lexend', sans-serif;
 }
 
 .homeContainer-left {
@@ -101,19 +107,53 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 20px;
 }
 
 .home-title {
-    font-size: 70px;
+    font-size: 100px;
+    line-height: 1.5;
+    font-weight: 800;
+    font-family: 'Lexend', sans-serif;
+}
+
+.home-title1 {
+    font-size: 20px;
     line-height: 1.2;
-    font-weight: bold;
-    font-family: 'Preahvihear', sans-serif;
+    font-weight: 400;
+    font-family: 'Lexend', sans-serif;
 }
 
 .home-titlePlusPng {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+}
+
+.home-titlePlusPng1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 27px;
+    margin-top: 10px;
+}
+
+.home-titlePlusPng2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+.home-titlePlusPng3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .home-titlePlusPng>img {
@@ -128,16 +168,24 @@
 }
 
 .homeContainer-right {
-    padding-left: 40PX;
     width: 60vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding-left: 20px;
 }
 
 .adopt-btn>* {
     text-decoration: none;
+
 }
+
+.adopt-btn {
+    position: absolute;
+    right: 150px;
+    bottom: 50px;
+}
+
 
 .Home-button {
     display: flex;
@@ -153,6 +201,7 @@
     color: var(--white);
     box-shadow: 1.5px 1.5px 3px var(--orange);
     font-family: 'Preahvihear', sans-serif;
+    margin-top: 20px;
 }
 
 .Home-button:hover {
@@ -169,20 +218,6 @@
     margin-left: 7px;
     margin: 0;
     padding: 0;
-}
-
-.planning-container {
-    padding: 10px;
-    margin-top: 30px;
-    border-radius: 40px 50px 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.left-pic>img {
-    height: 220px;
-    margin-left: 30px;
 }
 
 .left-para {
@@ -395,7 +430,7 @@
 }
 
 .Navbar-button {
-    border: 2px var(--orange) solid;
+    border: 2px var(--darkGrey) solid;
     height: 42px;
     width: 105px;
     font-family: 'Oxygen', sans-serif;
@@ -452,21 +487,23 @@
 }
 
 .planning-container {
-    margin: 40px 0px 0px 0px;
+    margin: 20px 0px 70px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: left;
+    position: relative;
 }
 
 .planning-container h1 {
     margin-top: 15px;
     color: var(--darkGrey);
-    border-bottom: 3px solid var(--darkGrey);
     padding-bottom: 8px;
+    padding: 20px 50px 0px 50px;
 }
 
 .boxes-container {
-    padding: 0px 80px 0px 80px;
+    padding: 0px 80px 100px 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -495,13 +532,46 @@ body {
 
 .left-pic {
     position: relative;
-    bottom: 50px;
-    width: 16vw;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .left-pic>img {
-    height: 220px;
-    margin-left: 30px;
+    width: 100vw;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin-left: 0px;
+    z-index: 2;
+}
+
+.overlay-text {
+  position: absolute;
+  opacity: 0.9;
+  top: 10%; /* Adjust as needed */
+  left: 4.6%;
+  color: black;
+  font-size: 96px;
+  font-family: 'Krona One', sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* for readability */
+}
+
+.left-pic:hover > img {
+  transform: scale(1.02); /* slight pop effect on hover */
+}
+
+.left-pic::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20%; /* adjust as needed */
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, white 100%);
+  pointer-events: none;
 }
 
 .left-para {
@@ -1202,7 +1272,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom right, var(--hoverorange), var(--Lightorange));
+    background-color: linear-gradient(to bottom right, var(--hoverorange), var(--Lightorange));
 }
 
 .login-container {

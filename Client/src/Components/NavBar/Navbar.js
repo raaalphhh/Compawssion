@@ -28,8 +28,8 @@ const Navbar = (props) => {
         </ul>
       </div>
       <div>
-        <Link to="/services">
-          <button className="Navbar-button">Give a Pet</button>
+        <Link to="/admin">
+          <button className="Navbar-button">Admin Login</button>
         </Link>
       </div>
     </div>
