@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import postPet from "./images/postPet.png";
+import { injectCatDogAnimation } from './catDogAnimation.js';
 
 const PostPetSection = () => {
   const [name, setName] = useState("");
@@ -114,8 +114,7 @@ const PostPetSection = () => {
   return (
     <section className="post-pet-section">
       <h4>REHOME A PET</h4>
-      <h2>Rehome with Compawssion</h2>
-      <img src={postPet} alt="Pet Looking for a Home" />
+      <h4>Rehome with Compawssion</h4>
 
       <form onSubmit={handleSubmit} encType="multipart/form-data" className="form-card">
         <div className="input-box">
