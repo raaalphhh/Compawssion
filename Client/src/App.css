@@ -1670,10 +1670,12 @@ body {
   text-align: center;
   pointer-events: none; /* optional if it’s a background effect */
   z-index: 0; /* place behind if needed */
+  padding-top: 100px;
 }
 
 .heading-spacer {
   height: 9vw; /* should match or slightly exceed your heading size */
+    padding-top: 200px;
 }
 
 /* Full-screen blur layer */
