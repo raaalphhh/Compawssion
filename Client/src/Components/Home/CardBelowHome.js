@@ -1,5 +1,5 @@
 import React from 'react';
-import golden from "./images/golden.png";
+import golden1 from "./images/golden1.png";
 
 {/*
 const formatNumber = (number) => {
@@ -12,17 +12,19 @@ const formatNumber = (number) => {
 
 const CardBelowHome = () => {
   return (
-    <div className='left-pic'>
-      <img src={golden} alt="Dog with toy"/>
-      {/*<div className='left-para'><p><p className='adopted-pets-num'>{adoptedPets}</p> Furry Friends<br/>Living Their Best Lives</p></div>
-      <div className='right-pic'><img src={HomeDarkCardRightPic} alt="Dog pic" /></div>
-      <div className='right-para'><p className='we-do'>WHAT WE DO?</p>With a focus on matching the right pet with the right family, PawFinds makes it easy to adopt love and foster happiness.</div>
-        */}
-      <div className='overlay-text'>
-        Life is better<br />
-        with fur,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paws,<br />
-        and a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;little<br />
-        chaos
+    <div className = "cardcontainer">
+      <div className='left-pic'>
+        <img src={golden1} alt="Dog with toy"/>
+        {/*<div className='left-para'><p><p className='adopted-pets-num'>{adoptedPets}</p> Furry Friends<br/>Living Their Best Lives</p></div>
+        <div className='right-pic'><img src={HomeDarkCardRightPic} alt="Dog pic" /></div>
+        <div className='right-para'><p className='we-do'>WHAT WE DO?</p>With a focus on matching the right pet with the right family, PawFinds makes it easy to adopt love and foster happiness.</div>
+          
+        <div className='overlay-text'>
+          Life is better<br />
+          with fur,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paws,<br />
+          and a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;little<br />
+          chaos
+        </div>*/}
       </div>
     </div>
   )

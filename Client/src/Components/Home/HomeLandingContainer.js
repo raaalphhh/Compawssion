@@ -8,8 +8,8 @@ const HomeLandingContainer = (props) => {
         <div>
           <p className="home-title">
             <div className="home-titlePlusPng">
-              <p>pause.
-                play.
+              <p>pause.<br />
+                play.<br />
                 love.
               </p>
             </div>
