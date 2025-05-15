@@ -112,7 +112,6 @@ const PostPetSection = () => {
 
   return (
     <section className="post-pet-section">
-      <h4>REHOME A PET</h4>
       <h4>Rehome with Compawssion</h4>
 
       <form onSubmit={handleSubmit} encType="multipart/form-data" className="form-card">

@@ -28,9 +28,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 35px;
-    background-color: var(--orange);
     position: fixed;
     z-index: 1;
+    
+    background-color: var(--orange);
 }
 
 .navbar-logo {
@@ -50,7 +51,7 @@
 }
 
 .logo-container>p {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Lexend', sans-serif;
     margin-left: 10px;
     font-size: 29px;
 }
@@ -745,10 +746,11 @@ body {
 
 .post-pet-section h4 {
     font-family: "Varela Round", sans-serif;
-    padding-bottom: 10px;
+    padding: 30px;
     color: var(--orange);
     font-size: 40px;
     margin-bottom: 0px;
+    margin-top: 50px;
 }
 
 .post-pet-section img {
@@ -1186,6 +1188,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px 50px;
+    padding-top: 150px;
 }
 
 .contactUs-left-para {
