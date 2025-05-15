@@ -183,9 +183,8 @@
 }
 
 .adopt-btn {
-    position: absolute;
-    right: 150px;
-    bottom: 50px;
+    position: relative;
+    margin-left: 70%;
 }
 
 
@@ -240,11 +239,6 @@
 .we-do {
     color: var(--orange);
     margin-bottom: 10px;
-}
-
-.card-container h2 {
-    font-size: 20px;
-    margin-top: 20px;
 }
 
 .adopt-section img {
@@ -472,19 +466,19 @@
 }
 
 .planning-container {
-    margin: 20px 0px 70px 0px;
+    margin: 0px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
     position: relative;
 }
 
 .planning-container h1 {
-    margin-top: 15px;
     color: var(--darkGrey);
     padding-bottom: 8px;
-    padding: 20px 50px 0px 50px;
+    padding: 2px 0px 0px 0px;
+    border-bottom: 3px solid var(--darkGrey);
+
 }
 
 .boxes-container {
@@ -492,7 +486,33 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
+}
+
+.meetyourfurryfriend-container {
+    margin: 0px 0px 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.meetyourfurryfriend-container h1 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: var(--darkGrey);
+    padding: 0px 0% 2px 0%;
+    border-bottom: 3px solid var(--darkGrey);
+}
+
+.meetyourfurryfriendboxes-container {
+    padding: 0px 5% 0px 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0px;
+    width: 100%;        /* adjust width */
+    height: auto;        /* adjust height or fix it */ 
 }
 
 
@@ -598,25 +618,25 @@ body {
 
 
 .card-container {
-    max-width: 25vw;
-    width: 25vw;
-    height: 200px;
-    margin: 25px 30px 0px 30px;
+    padding: 20px 45px 20px 45px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    
+    font-family: 'Lexend', sans-serif;
 }
 
-.card-container h2 {
+.card-container h3 {
     color: var(--orange);
     text-align: center;
-    padding: 30px 0px 30px 0px;
+    font-size: 15px;
 }
 
 .card-container p {
     text-align: center;
     font-size: 15px;
     color: var(--darkGrey);
+    padding: 30px 0px 30px 0px;;
 }
 
 

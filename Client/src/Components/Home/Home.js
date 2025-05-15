@@ -2,6 +2,7 @@ import React from "react";
 import HomeLandingContainer from "./HomeLandingContainer";
 import PlanningToAdoptAPet from "./PlanningToAdoptAPet";
 import CardBelowHome from "./CardBelowHome";
+import Meetyourfurryfriend from "./Meetyourfurryfriend";
 
 const Home = (props) => {
   return (
@@ -9,6 +10,7 @@ const Home = (props) => {
       <CardBelowHome/>
       <HomeLandingContainer description={props.description} />
       <PlanningToAdoptAPet />
+      <Meetyourfurryfriend />
     </>
   );
 };
