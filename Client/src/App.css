@@ -318,14 +318,14 @@
 }
 
 .pet-card-details p {
-    font-family: "Varela Round", sans-serif;
-    color: var(--orange);
+    font-family: "Lexend Deca", sans-serif;
+    color: #333333;
 }
 
-.popup {
+.popup { /*no changes*/
     position: fixed;
     top: 0;
-    border-radius: 5px;
+    z-index: 1000;    
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -953,84 +953,58 @@ body {
     flex-wrap: wrap;
 }
 
-.pet-view-card {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 10px;
-    border: 1px solid var(--orange);
-    width: 310px;
-}
-
 .pet-card-pic {
+    position: relative;
     max-width: 250px;
     min-width: 250px;
+    overflow: hidde;
 }
 
 .pet-card-pic img {
-    width: 310px;
+    width: 100%;
     height: 180px;
     object-fit: cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
-
 .pet-card-details {
     padding: 5px 10px;
+    color: #333333;
+    text-align: left;
 }
 
 .pet-card-details h2 {
-    font-family: "Varela Round", sans-serif;
-    color: var(--orange);
-    text-align: center;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 800;
+    color: #333333;
+    text-align: left;
     margin: 5px 0;
 }
 
 .pet-card-details p {
-    font-family: "Varela Round", sans-serif;
-    color: var(--orange);
+    font-family: "Lexend Deca", sans-serif;
+    color: #333333;
 }
 
-.show-interest-btn {
-    display: flex;
-    justify-content: center;
-}
-
-.show-interest-btn button {
-    font-family: "Varela Round", sans-serif;
-    font-size: 14px;
-    margin: 10px 0;
-    border-radius: 100px;
-    border: none;
-    padding: 8px 15px;
-    color: var(--white);
-    background-color: var(--orange);
-}
-
-.show-interest-btn button:hover {
-    border: 2px var(--hoverorange) solid;
-    background-color: var(--hoverorange);
-    color: var(--white);
-    transform: scale(1.05); 
-    box-shadow: 2px 2px 5px var(--darkGrey);
-    animation: bounce 1s ease;
-    cursor: pointer;
-}
-
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.popup { /*no changes*/
+  position: fixed; /* not absolute */
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* ensures it overlays all other content */
 }
 
 .popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: 1001; /* even higher if needed */
 }
 
 .close-btn {
@@ -1047,8 +1021,10 @@ body {
 }
 
 .form-pet-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-top: 310px;
+  gap: 20px;
 }
 
 .pet-details {
@@ -1056,7 +1032,6 @@ body {
     justify-content: space-between;
     flex-direction: row;
     margin: auto;
-    border: 1px solid var(--orange);
     width: 310px;
     height: 120px;
     margin-bottom: 17px;
@@ -1068,9 +1043,9 @@ body {
     object-fit: cover;
 }
 
-.pet-info h2 {
+.pet-info h2 { /*name small*/
     font-family: "Varela Round", sans-serif;
-    color: var(--orange);
+    color: #333333;
     text-align: center;
     margin: 5px 0;
 }
@@ -1085,21 +1060,25 @@ body {
 
 .pet-info p {
     font-family: "Varela Round", sans-serif;
-    color: var(--orange);
+    color: #333333;
 }
 
 .custom-adopt-form-container {
-    text-align: center;
-    padding: 50px;
+  text-align: center;
+  padding: 100px;
+  width: 500px;
+  position:relative;
+  overflow: visible;
 }
 
 .custom-form-heading {
-    font-family: "Varela Round", sans-serif;
-    padding-bottom: 10px;
-    color: var(--orange);
-    border-bottom: 2px solid var(--orange);
-    font-size: 32px;
-    margin-bottom: 20px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  margin-bottom: 150px;
+  color: #d4d4d4;
+  z-index: 2;
+  position: relative;
 }
 
 .custom-form img {
@@ -1123,9 +1102,9 @@ body {
 }
 
 .custom-label {
-    font-family: "Varela Round", sans-serif;
-    color: var(--orange);
-    font-weight: bold;
+    font-family: "Lexenda Deca", sans-serif;
+    color: #333333;
+    font-weight: 700;
     margin-bottom: 3px;
     display: block;
 }
@@ -1424,41 +1403,55 @@ body {
   background-color: #45a049;
 }
 
-
 .pet-view-card {
     display: flex;
     flex-direction: column;
-    margin: 10px 10px;
-    border: 1px solid var(--orange);
+    margin: 10px;
     width: 310px;
+    height: 400px;
     overflow: hidden;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .pet-card-pic {
     max-width: 250px;
     min-width: 250px;
+      flex-grow: 1;
 }
 
 .pet-card-pic img {
+      flex-grow: 1;
     width: 310px;
-    height: 180px;
+    height: 250px;
+    background-color: #f0f0f0;
     object-fit: cover;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 78%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 76.7%, transparent 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
 
 .pet-card-details {
-    padding: 5px 10px;
+  font-size: 14px;
+  max-width: 70%;
+    color: #333333;
 }
 
 .pet-card-details h2 {
-    font-family: "Varela Round", sans-serif;
-    color: var(--orange);
-    text-align: center;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 900;
+    color: #333333;
+    text-align: left;
     margin: 5px 0;
 }
 
 .pet-card-details p {
-    font-family: "Varela Round", sans-serif;
-    color: var(--orange);
+    font-family: "Lexend Deca", sans-serif;
+    color: #333333;
 }
 
 .form-card-details {
@@ -1486,21 +1479,37 @@ body {
     white-space: nowrap;
 }
 
-.show-interest-btn {
-    display: flex;
-    justify-content: center;
+.pet-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
 }
 
-.show-interest-btn button {
-    font-family: "Varela Round", sans-serif;
-    font-size: 14px;
-    margin: 10px 0;
-    border-radius: 100px;
-    border: none;
-    padding: 8px 15px;
-    color: var(--white);
-    background-color: var(--orange);
+.show-interest-btn-side {
+  display: flex;
+  align-items: flex-end;
 }
+
+.show-interest-btn-side button {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  border-radius: 100px;
+  border: 2px solid var(--hoverorange);
+  padding: 8px 15px;
+  color: var(--white);
+  background-image: linear-gradient(to right, #FF705D 19%, #FF952B 68%, #FFAB57 99%);
+  background-color: var(--orange);
+}
+
+.show-interest-btn-side button:hover {
+  background-color: var(--hoverorange);
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 2px 2px 5px var(--darkGrey);
+  animation: bounce 1s ease;
+}
+
 
 .app-rej-btn {
     display: flex;
@@ -1530,26 +1539,28 @@ body {
 }
 
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed; /* not absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* ensures it overlays all other content */
+  animation: fadeInScale 0.3s ease-out forwards;
 }
 
 .popup-content {
-    background-color: white;
-    padding: 20px;
-    max-width: 80%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    overflow-y: auto;
-    overflow-x: hidden;
-    word-wrap: break-word;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: 1001; /* even higher if needed */
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
 }
 
 .close-btn {
@@ -1557,7 +1568,6 @@ body {
     border: none;
     color: white;
     padding: 8px 15px;
-    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -1634,4 +1644,174 @@ body {
     cursor: pointer;
 }
 
+.section-heading-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
+.pet-card-details-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  gap: 10px;
+}
+
+.big-title { 
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 800;  
+  font-size: 8.5vw; /* scales up with screen size */
+  white-space: nowrap; /* keeps it on one line */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: visible; /* allows clipping */
+  text-align: center;
+  pointer-events: none; /* optional if it’s a background effect */
+  z-index: 0; /* place behind if needed */
+}
+
+.heading-spacer {
+  height: 9vw; /* should match or slightly exceed your heading size */
+}
+
+/* Full-screen blur layer */
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.2); /* optional dimming */
+  z-index: 1000;
+  animation: fadeInBlur 0.4s ease forwards;
+}
+
+@keyframes fadeInBlur {
+  0% {
+    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.popup-top-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.popup-top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.popup-top-image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.popup-top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.custom-form-heading-overlay {
+    position: absolute;
+  top: 10px; /* move it close to top */
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 6px 16px;
+  font-size: 75px;
+  font-weight: 700;
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.popup-top-banner {
+ position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -6%);
+  width: 110%; /* enlarged beyond container */
+  max-height: 60%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.popup-top-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.scrollable-popup {
+  max-height: 90vh;
+  overflow-y: auto;
+  padding-right: 10px; /* avoids hidden text due to scrollbar hiding */
+}
+
+/* Hide scrollbars — cross-browser */
+.scrollable-popup::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.scrollable-popup {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.scrollable-popup {
+  scroll-behavior: smooth;
+  padding-right: 8px;
+}
+
+.custom-form-subheading {
+    font-family: 'Lexenda Deca', sans-serif;
+    font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 25px;
+  margin-left: -100px;
+  text-align: left;
+}
+
+.popup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
