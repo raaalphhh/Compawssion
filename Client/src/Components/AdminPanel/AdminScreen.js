@@ -10,13 +10,10 @@ const AdminScreen = () => {
   return (
     <div className='admin-screen-container'>
       <div className='admin-screen-left'>
-        <div>
           <p onClick={() => setScreen('postingPet')}>Post Pet Requests</p>
           <p onClick={() => setScreen('approvedRequests')}>Approved Pets</p>
           <p onClick={() => setScreen('adoptingPet')}>Adoption Requests</p>
           <p onClick={() => setScreen('adoptedHistory')}>Adopted History</p>
-
-        </div>
       </div>
       <div className='admin-screen-right'>
         {screen === 'postingPet' && <PostingPets />}

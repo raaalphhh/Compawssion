@@ -65,8 +65,8 @@ const AdoptingRequests = () => {
     : petsWithRequests;
 
   return (
-    <div>
-      <div className="dropdown-container" style={{ textAlign: 'right', marginBottom: '20px' }}>
+    <div className='containerss'>
+      <div className="dropdown-container" >
         <select className='req-filter-selection' onChange={handlePetChange} value={selectedPetId}>
           <option value="">All Requets</option>
           {petsWithRequests.map((pet) => (
@@ -104,7 +104,7 @@ const AdoptingRequests = () => {
           );
         })
       ) : (
-        <p>No adoption requests available for any pet.</p>
+        <div className='parag'><p>No adoption requests available for any pet.</p></div>
       )}
 
       {petDetailsPopup && selectedPet && (
