@@ -48,6 +48,7 @@ const Footer = (props) => {
           >
             <i className="fa fa-facebook"></i> Yesuah Jirah
           </a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
           <a
             className="contact-links"
             href="https://web.facebook.com/aieriyosusae"
@@ -55,6 +56,7 @@ const Footer = (props) => {
             rel="noopener noreferrer"
           >
             <i className="fa fa-facebook"></i> Irysse
+            
           </a>
         </p>
         <p>{"\u00A9"} 2025 Emerging Technologies Project</p>
