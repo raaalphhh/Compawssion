@@ -174,7 +174,7 @@ const PostPetSection = () => {
         </div>
 
         <div className="input-box">
-          <h3>Justification for giving a pet</h3>
+          <h3>Reason for Rehoming a Pet</h3>
           <textarea
             rows="4"
             value={justification}
@@ -210,7 +210,7 @@ const PostPetSection = () => {
         )}
 
         <button type="submit" className="cta-button" disabled={isSubmitting}>
-          {isSubmitting ? "Submitting..." : "Submit Your Pet"}
+          {isSubmitting ? "Submitting..." : "Submit"}
         </button>
 
         {showPopup && (

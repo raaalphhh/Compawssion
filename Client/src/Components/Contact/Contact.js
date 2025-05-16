@@ -9,7 +9,8 @@ import comImage from './images/com.png';
 
 const contacts = [
   {
-    image: comImage,
+    url: "mailto:compawssion@gmail.com", // Replace with your actual Gmail address
+    image: comImage,                    // Same image, or change to Gmail icon if you want
   },
   {
     name: "Ia Micah G. Castro",
@@ -56,16 +57,19 @@ const Contact = () => {
             <div className="overlay"></div>
 
             <div className="border">
-            <h2>{contact.name}</h2>
-{contact.position && <p className="position">{contact.position}</p>}
+              <h2>{contact.name}</h2>
+              {contact.position && <p className="position">{contact.position}</p>}
               <div className="icons">
-        {/* Don't show the Facebook icon for the second to the last card (index 4) */}
-        {index !== 0 && contact.url && (
-          <a href={contact.url} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-        )}
-      </div>
+                {contact.url && (
+                  <a href={contact.url} target="_blank" rel="noopener noreferrer">
+                    <i
+                      className={`fa ${index === 0 ? 'fa-envelope' : 'fa-facebook'}`}
+                      aria-hidden="true"
+                      style={index === 0 ? { color: 'black' } : {}}
+                    ></i>
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}
