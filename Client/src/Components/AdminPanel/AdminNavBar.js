@@ -1,11 +1,17 @@
+import { Link } from "react-router-dom";
 
 function AdminNavBar() {
-
-
   return (
     <nav className="navbar">
       <div className="navbar-brand">Admin Panel</div>
-      <h3 className='logout-btn' onClick={() => (window.location.reload())}>Logout</h3>
+      <button
+        className="logout-btn"
+        onClick={() => {
+          window.location.href = 'https://compawssion-1.onrender.com';
+        }}
+      >
+        Logout
+      </button>
     </nav>
   );
 }

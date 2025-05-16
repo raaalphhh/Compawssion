@@ -2,7 +2,7 @@ import React from "react";
 import HomeLandingContainer from "./HomeLandingContainer";
 import PlanningToAdoptAPet from "./PlanningToAdoptAPet";
 import CardBelowHome from "./CardBelowHome";
-import Meetyourfurryfriend from "./Meetyourfurryfriend";
+import Meetyourfurryfriend from "./MeetYourFurryFriend";
 
 const Home = (props) => {
   return (

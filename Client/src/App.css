@@ -358,20 +358,26 @@
 }
 
 .logout-btn {
-    cursor: pointer;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 5px;
+  transition: all 0.3s ease;
 }
 
 .logout-btn:hover {
-    border: 2px var(--hoverorange) solid;
-    background-color: var(--hoverorange);
-    color: var(--white);
-    transform: scale(1.05); 
-    box-shadow: 2px 2px 5px var(--darkGrey);
-    border-radius: 5px;
-    padding: 5px;
-    animation: bounce 1s ease;
-    cursor: pointer;
+  border: 2px var(--hoverorange) solid;
+  background-color: var(--hoverorange);
+  color: var(--white);
+  transform: scale(1.05); 
+  box-shadow: 2px 2px 5px var(--darkGrey);
+  border-radius: 5px;
+  animation: bounce 1s ease;
+  cursor: pointer;
 }
+
 
 .navbar-container {
     width: 100%;
@@ -517,11 +523,11 @@
 
 
 
-
+/* 1. Main body styles */
 body {
-    overflow-x: hidden;
-    
+  overflow-x: hidden;
 }
+
 
 .dark-grey-container {
     background-color: var(--darkGrey);
@@ -1565,23 +1571,6 @@ body {
     display: inline;
     cursor: pointer;
     color: var(--orange);
-}
-
-
-.logout-btn {
-    cursor: pointer;
-}
-
-.logout-btn:hover {
-    border: 2px var(--hoverorange) solid;
-    background-color: var(--hoverorange);
-    color: var(--white);
-    transform: scale(1.05); 
-    box-shadow: 2px 2px 5px var(--darkGrey);
-    border-radius: 5px;
-    padding: 5px;
-    animation: bounce 1s ease;
-    cursor: pointer;
 }
 
 .section-heading-wrapper {

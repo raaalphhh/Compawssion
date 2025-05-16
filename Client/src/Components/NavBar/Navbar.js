@@ -17,7 +17,7 @@ const Navbar = (props) => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <Link to="/services">Rehome A Pet</Link>
           </li>
           <li>
             <Link to="/pets">Pets</Link>
