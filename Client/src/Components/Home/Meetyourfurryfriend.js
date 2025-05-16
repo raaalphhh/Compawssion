@@ -7,7 +7,7 @@ const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-const Meetyourfurryfriend = () => {
+const MeetYourFurryFriend = () => {
   const [pets, setPets] = useState([]);
 
   useEffect(() => {
@@ -42,4 +42,4 @@ const Meetyourfurryfriend = () => {
   );
 };
 
-export default Meetyourfurryfriend;
+export default MeetYourFurryFriend;
